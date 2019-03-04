@@ -1,0 +1,133 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta charset="utf-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <title>Weather App</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <!-- Compiled and minified CSS -->
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/materialize/1.0.0/css/materialize.min.css"
+    />
+
+    <!-- Compiled and minified JavaScript -->
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/materialize/1.0.0/js/materialize.min.js"></script>
+
+    <link
+      rel="stylesheet"
+      type="text/css"
+      media="screen"
+      href="./css/materialize.css"
+    />
+    <link
+      rel="stylesheet"
+      type="text/css"
+      media="screen"
+      href="./css/materialize.min.css"
+    />
+
+    <link
+      href="https://fonts.googleapis.com/icon?family=Material+Icons"
+      rel="stylesheet"
+    />
+    <link
+      rel="stylesheet"
+      type="text/css"
+      media="screen"
+      href="./css/style.css"
+    />
+    <link
+      rel="stylesheet"
+      type="text/css"
+      href="https://cdnjs.cloudflare.com/ajax/libs/weather-icons/2.0.9/css/weather-icons.min.css"
+    />
+  </head>
+  <body>
+    <div class="back">
+      <nav>
+        <div class="nav-wrapper">
+          <div class="container">
+            <a href="#!" class="brand-logo left"
+              ><i class="material-icons ">cloud</i
+              ><strong>Local</strong>Weather</a
+            >
+            <span class="right" id="dateTime">12/23/2019 09:23</span>
+          </div>
+        </div>
+      </nav>
+      <!-- 
+        location
+        description
+        temperature
+        humidity
+        wind
+        visibility
+      -->
+      <div class="container">
+        <div class="row">
+          <div class="col-8">
+            <div class="card" style="">
+              <div class="card-content white-text center">
+                <h4 id="location">Miami | USA</h4>
+                <div class="row">
+                  <div
+                    id="description"
+                    class="description col sm-6 text-center"
+                  >
+                    <span id="desc">clear..</span>
+                    &nbsp;<i id="icon-thermometer" class="wi wi-owm-200"></i>
+                  </div>
+                  <div id="temperature" class="col sm-6 text-center">
+                    <span id="temp">60</span>
+                    &nbsp;<i
+                      id="icon-thermometer"
+                      class="wi wi-thermometer"
+                    ></i>
+                  </div>
+                </div>
+                <div class="weather-body">
+                  <div class="row">
+                    <div class="humidity col sm-4 text-center">
+                      <i class="wi wi-raindrop"></i><span> Humidity</span>
+                    </div>
+                    <div class="wind col sm-4 text-center">
+                      <i class="wi wi-strong-wind"></i><span> Wind Speed</span>
+                    </div>
+                    <div class="visibility col sm-4 text-center">
+                      <i class="material-icons dp48">visibility</i
+                      ><span> Visibility</span>
+                    </div>
+                  </div>
+                  <!-- weather body data -->
+                  <div class="row">
+                    <div
+                      id="humidity"
+                      class="humidity-data col sm-4 text-center"
+                    >
+                      75%
+                    </div>
+                    <div id="wind" class="wind-data col sm-4 text-center">
+                      34mph
+                    </div>
+                    <div
+                      id="visibility"
+                      class="degree-data col sm-4 text-center"
+                    >
+                      235°
+                    </div>
+                  </div>
+                </div>
+              </div>
+              <div class="card-action center-align"></div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </body>
+  <script src="./js/materialize.js"></script>
+  <script src="./js/materialize.min.js"></script>
+  <script src="https://unpkg.com/axios/dist/axios.min.js"></script>
+  <script src="./js/script.js"></script>
+</html>

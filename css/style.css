@@ -1,0 +1,76 @@
+body {
+  background-size: cover;
+  background-repeat: no-repeat;
+  min-height: 100vh;
+  background-position: center;
+  margin: 0 auto;
+  background-image: linear-gradient(
+      rgba(31, 34, 118, 0.8),
+      rgba(31, 34, 118, 0.8)
+    ),
+    url(https://wallpaperhd.guru/wp-content/uploads/2017/04/wallpaper.wiki-Awesome-Nature-wallpaper-rocks-sand-and-sea-PIC-WPD0013797.jpg);
+}
+/* .back {
+  position: absolute;
+  min-height: 100vh;
+  min-width: 100vw;
+  top: 0;
+  bottom: 0;
+  background-color: rgba(31, 34, 118, 0.8);
+  z-index: -5;
+} */
+nav {
+  background: rgba(31, 34, 118, 0.1);
+  margin-bottom: 2%;
+}
+nav .brand-logo.left {
+  left: 4.5rem !important;
+}
+#description {
+  font-size: 3.5rem;
+  width: 50%;
+}
+
+#temperature {
+  font-size: 4rem;
+  width: 50%;
+}
+.card {
+  border-radius: 29px;
+  background-color: rgba(31, 34, 118, 0.2);
+}
+.humidity {
+  width: 32%;
+  font-size: 1.5rem;
+  border-right: 1px solid;
+}
+.wind {
+  width: 32%;
+  font-size: 1.5rem;
+  border-right: 1px solid;
+}
+.visibility {
+  width: 32%;
+  font-size: 1.5rem;
+  border-right: 1px solid;
+}
+#humidity {
+  width: 32%;
+  font-size: 1.5rem;
+  border-right: 1px solid;
+}
+#wind {
+  width: 32%;
+  font-size: 1.5rem;
+  border-right: 1px solid;
+}
+#visibility {
+  width: 32%;
+  font-size: 1.5rem;
+  border-right: 1px solid;
+}
+.weather-body .row {
+  border: 1px solid;
+  padding: 2%;
+  margin: 0;
+}
